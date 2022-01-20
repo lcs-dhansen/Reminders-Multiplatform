@@ -10,9 +10,9 @@ import Foundation
 class TaskStore: ObservableObject {
     @Published var tasks: [Task]
     
-    init(tasks: [Task} = []) {
+    init(tasks: [Task] = []) {
         self.tasks = tasks
     }
 }
 
-let taskStore = TaskStore(tasks: testData)
+let testStore = TaskStore(tasks: testData)
