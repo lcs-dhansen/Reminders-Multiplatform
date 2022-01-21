@@ -11,28 +11,29 @@ struct TaskCell: View {
     
    @ObservedObject var task: Task
     
+    var taskColor: Color {
+        switch task.priority {
+        case .high:
+            return Color.red
+        case .medium:
+            return Color.blue
+        case .low:
+            return Color.primary
+        }
+    }
+    
     var body: some View {
         HStack {
             Image(systemName: task.completed ? "checkmark.circle.fill" : "circle")
                 .onTapGesture {
-                    ////debug code in comment
-//                        print("State of list BEFORE toggle")
-//                        for (index, task) in store.tasks.enumerated() {
-//                            print("Task at \(index) has completed value of \(task.completed)")
-//                        }
-//                        print("about to toggle")
+      
                     task.completed.toggle()
-//
-//                        print("just toggled")
-//                        //current state of the list
-//                        print("State of the list AFTER toggle")
-//                        for (index, task) in store.tasks.enumerated() {
-//                            print("Task at \(index) has completed value of \(task.completed)")
-//                        }
+                    
                 }
             
             Text(task.description)
         }
+        .foregroundColor(self.taskColor)
     }
 }
 
