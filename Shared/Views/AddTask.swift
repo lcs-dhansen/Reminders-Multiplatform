@@ -39,6 +39,12 @@ struct AddTask: View {
                         saveTask()
                     }
                 }
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancel") {
+                        //dissmiss the sheet by changing the showing value to false
+                        showing = false
+                    }
+                }
             }
             
         }
