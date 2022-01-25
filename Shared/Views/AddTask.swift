@@ -38,6 +38,8 @@ struct AddTask: View {
                     Button("Save") {
                         saveTask()
                     }
+                    //the dutton is diabled to prevent the user from saving an empty task
+                    .disabled(description.isEmpty)
                 }
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Cancel") {
@@ -48,6 +50,8 @@ struct AddTask: View {
             }
             
         }
+        //prevents the sheet from closing by swiping down as that causes data to not be saved which may cause confusion
+        .interactiveDismissDisabled()
     }
     
     func saveTask() {
