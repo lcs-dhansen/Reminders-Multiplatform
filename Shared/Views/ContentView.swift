@@ -17,8 +17,13 @@ struct ContentView: View {
     
     
     var body: some View {
-        List(store.tasks) { task in
-            TaskCell(task: task)
+        List {
+            ForEach(store.tasks) { task in
+                TaskCell(task: task)
+            }
+        //view modifier invokes the function onteh view model
+            .onDelete(perform: store.deleteItems)
+            
         }
         .navigationTitle("Reminders")
         .toolbar {
