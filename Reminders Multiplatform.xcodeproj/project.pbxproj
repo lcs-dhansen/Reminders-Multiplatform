@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0F7523E2279B4AD0009A5EEE /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7523E1279B4AD0009A5EEE /* TaskCell.swift */; };
 		0F7523E3279B4AD0009A5EEE /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7523E1279B4AD0009A5EEE /* TaskCell.swift */; };
+		0FAFC2CC27A0353A0039E2E3 /* AddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAFC2CB27A0353A0039E2E3 /* AddTask.swift */; };
+		0FAFC2CD27A0353A0039E2E3 /* AddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAFC2CB27A0353A0039E2E3 /* AddTask.swift */; };
 		0FC6A7152799C9890088BAED /* Reminders_MultiplatformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6A7052799C9870088BAED /* Reminders_MultiplatformApp.swift */; };
 		0FC6A7162799C9890088BAED /* Reminders_MultiplatformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6A7052799C9870088BAED /* Reminders_MultiplatformApp.swift */; };
 		0FC6A7172799C9890088BAED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6A7062799C9870088BAED /* ContentView.swift */; };
@@ -25,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		0F7523E1279B4AD0009A5EEE /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		0FAFC2CB27A0353A0039E2E3 /* AddTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTask.swift; sourceTree = "<group>"; };
 		0FC6A7052799C9870088BAED /* Reminders_MultiplatformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminders_MultiplatformApp.swift; sourceTree = "<group>"; };
 		0FC6A7062799C9870088BAED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0FC6A7072799C9880088BAED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +99,7 @@
 			children = (
 				0FC6A7062799C9870088BAED /* ContentView.swift */,
 				0F7523E1279B4AD0009A5EEE /* TaskCell.swift */,
+				0FAFC2CB27A0353A0039E2E3 /* AddTask.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -213,6 +217,7 @@
 				0FC6A7262799C9DB0088BAED /* Task.swift in Sources */,
 				0FC6A72A2799CA510088BAED /* TaskPriority.swift in Sources */,
 				0F7523E2279B4AD0009A5EEE /* TaskCell.swift in Sources */,
+				0FAFC2CC27A0353A0039E2E3 /* AddTask.swift in Sources */,
 				0FC6A7152799C9890088BAED /* Reminders_MultiplatformApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +231,7 @@
 				0FC6A72F2799CC820088BAED /* TaskStore.swift in Sources */,
 				0FC6A7182799C9890088BAED /* ContentView.swift in Sources */,
 				0F7523E3279B4AD0009A5EEE /* TaskCell.swift in Sources */,
+				0FAFC2CD27A0353A0039E2E3 /* AddTask.swift in Sources */,
 				0FC6A7162799C9890088BAED /* Reminders_MultiplatformApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
